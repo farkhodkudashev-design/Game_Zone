@@ -1,0 +1,231 @@
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodGo — Pizza Time</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container nav">
+        <a href="index.html" class="logo">Food<span>Go</span></a>
+
+        <nav class="navlinks">
+            <a href="index.html">Главная</a>
+            <a href="restaurants.html">Рестораны</a>
+            <a href="menu.html">Меню</a>
+            <a href="about.html">О нас</a>
+            <a href="contact.html">Контакты</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="favorites.html" class="icon-btn">❤️</a>
+            <a href="cart.html" class="icon-btn">🛒</a>
+            <a href="profile.html" class="icon-btn">👤</a>
+        </div>
+    </div>
+</header>
+
+<main class="page">
+    <div class="container">
+
+        <div class="menu-hero">
+            <div class="menu-info">
+                <p>🍕 Итальянская кухня</p>
+                <h1>Pizza Time</h1>
+                <p>⭐ 4.8 • 🚴 25–35 мин • 💰 Доставка $2</p>
+            </div>
+        </div>
+
+        <div class="menu-tabs">
+            <a href="#popular">Популярное</a>
+            <a href="#pizza">Пицца</a>
+            <a href="#burgers">Бургеры</a>
+            <a href="#snacks">Закуски</a>
+            <a href="#salads">Салаты</a>
+            <a href="#desserts">Десерты</a>
+            <a href="#drinks">Напитки</a>
+        </div>
+
+        <section id="popular" class="section">
+            <div class="section-head">
+                <div>
+                    <h2>🔥 Популярное</h2>
+                    <p>Блюда, которые заказывают чаще всего</p>
+                </div>
+            </div>
+
+            <div class="grid">
+
+                <article class="card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=700&q=80" alt="Pepperoni Pizza">
+                        <span class="badge">BEST</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Pepperoni Pizza</h3>
+                        <p class="food-desc">Моцарелла, томатный соус и пепперони.</p>
+                        <div class="price-row">
+                            <span class="price">$13.90</span>
+                            <a href="cart.html" class="btn small">Добавить</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=80" alt="Margherita">
+                    </div>
+                    <div class="card-body">
+                        <h3>Margherita</h3>
+                        <p class="food-desc">Томаты, моцарелла, базилик и оливковое масло.</p>
+                        <div class="price-row">
+                            <span class="price">$11.90</span>
+                            <a href="cart.html" class="btn small">Добавить</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&w=700&q=80" alt="Four Cheese">
+                    </div>
+                    <div class="card-body">
+                        <h3>Four Cheese</h3>
+                        <p class="food-desc">Моцарелла, пармезан, дорблю и чеддер.</p>
+                        <div class="price-row">
+                            <span class="price">$14.90</span>
+                            <a href="cart.html" class="btn small">Добавить</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80" alt="BBQ Pizza">
+                    </div>
+                    <div class="card-body">
+                        <h3>BBQ Chicken</h3>
+                        <p class="food-desc">Курица, сыр, красный лук и BBQ соус.</p>
+                        <div class="price-row">
+                            <span class="price">$15.50</span>
+                            <a href="cart.html" class="btn small">Добавить</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="pizza" class="section">
+            <div class="section-head">
+                <h2>🍕 Пицца</h2>
+            </div>
+
+            <div class="grid">
+
+                <article class="card">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=700&q=80" alt="Pepperoni"></div>
+                    <div class="card-body"><h3>Pepperoni</h3><p class="food-desc">Пепперони и моцарелла.</p><div class="price-row"><span class="price">$13.90</span><a href="cart.html" class="btn small">Добавить</a></div></div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=80" alt="Margherita"></div>
+                    <div class="card-body"><h3>Margherita</h3><p class="food-desc">Томаты, сыр и базилик.</p><div class="price-row"><span class="price">$11.90</span><a href="cart.html" class="btn small">Добавить</a></div></div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1593560708920-61dd98c8c6d6?auto=format&fit=crop&w=700&q=80" alt="Vegetarian"></div>
+                    <div class="card-body"><h3>Vegetarian</h3><p class="food-desc">Свежие овощи и моцарелла.</p><div class="price-row"><span class="price">$12.90</span><a href="cart.html" class="btn small">Добавить</a></div></div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80" alt="BBQ Chicken"></div>
+                    <div class="card-body"><h3>BBQ Chicken</h3><p class="food-desc">Курица, BBQ и сыр.</p><div class="price-row"><span class="price">$15.50</span><a href="cart.html" class="btn small">Добавить</a></div></div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="burgers" class="section">
+            <div class="section-head"><h2>🍔 Бургеры</h2></div>
+
+            <div class="grid">
+
+                <article class="card">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Cheese Burger"></div>
+                    <div class="card-body"><h3>Cheese Burger</h3><p class="food-desc">Говядина, сыр, овощи и соус.</p><div class="price-row"><span class="price">$9.90</span><a href="cart.html" class="btn small">Добавить</a></div></div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=80" alt="Double Burger"></div>
+                    <div class="card-body"><h3>Double Burger</h3><p class="food-desc">Две котлеты, сыр и фирменный соус.</p><div class="price-row"><span class="price">$12.90</span><a href="cart.html" class="btn small">Добавить</a></div></div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=700&q=80" alt="Classic Burger"></div>
+                    <div class="card-body"><h3>Classic Burger</h3><p class="food-desc">Классический бургер с овощами.</p><div class="price-row"><span class="price">$8.90</span><a href="cart.html" class="btn small">Добавить</a></div></div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="snacks" class="section">
+            <div class="section-head"><h2>🍟 Закуски</h2></div>
+
+            <div class="grid">
+                <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80" alt="Fries"></div><div class="card-body"><h3>French Fries</h3><p class="food-desc">Хрустящий картофель фри.</p><div class="price-row"><span class="price">$4.50</span><a href="cart.html" class="btn small">Добавить</a></div></div></article>
+                <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=700&q=80" alt="Nuggets"></div><div class="card-body"><h3>Chicken Nuggets</h3><p class="food-desc">Хрустящие куриные наггетсы.</p><div class="price-row"><span class="price">$6.50</span><a href="cart.html" class="btn small">Добавить</a></div></div></article>
+                <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1625938145744-e380515399bf?auto=format&fit=crop&w=700&q=80" alt="Onion Rings"></div><div class="card-body"><h3>Onion Rings</h3><p class="food-desc">Луковые кольца в хрустящей панировке.</p><div class="price-row"><span class="price">$5.50</span><a href="cart.html" class="btn small">Добавить</a></div></div></article>
+            </div>
+        </section>
+
+        <section id="salads" class="section">
+            <div class="section-head"><h2>🥗 Салаты</h2></div>
+
+            <div class="grid">
+                <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?auto=format&fit=crop&w=700&q=80" alt="Caesar"></div><div class="card-body"><h3>Caesar Salad</h3><p class="food-desc">Курица, салат, сыр и соус Цезарь.</p><div class="price-row"><span class="price">$8.90</span><a href="cart.html" class="btn small">Добавить</a></div></div></article>
+                <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80" alt="Green Salad"></div><div class="card-body"><h3>Green Salad</h3><p class="food-desc">Свежие овощи, зелень и оливковое масло.</p><div class="price-row"><span class="price">$7.90</span><a href="cart.html" class="btn small">Добавить</a></div></div></article>
+            </div>
+        </section>
+
+        <section id="desserts" class="section">
+            <div class="section-head"><h2>🍰 Десерты</h2></div>
+
+            <div class="grid">
+                <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="Cheesecake"></div><div class="card-body"><h3>Cheesecake</h3><p class="food-desc">Нежный сливочный чизкейк.</p><div class="price-row"><span class="price">$6.90</span><a href="cart.html" class="btn small">Добавить</a></div></div></article>
+                <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=80" alt="Donut"></div><div class="card-body"><h3>Chocolate Donut</h3><p class="food-desc">Пышный пончик с шоколадной глазурью.</p><div class="price-row"><span class="price">$3.90</span><a href="cart.html" class="btn small">Добавить</a></div></div></article>
+            </div>
+        </section>
+
+        <section id="drinks" class="section">
+            <div class="section-head"><h2>🥤 Напитки</h2></div>
+
+            <div class="grid">
+                <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=700&q=80" alt="Cola"></div><div class="card-body"><h3>Cola</h3><p class="food-desc">Холодная Coca-Cola 0.5 л.</p><div class="price-row"><span class="price">$2.50</span><a href="cart.html" class="btn small">Добавить</a></div></div></article>
+                <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=700&q=80" alt="Cappuccino"></div><div class="card-body"><h3>Cappuccino</h3><p class="food-desc">Ароматный кофе с молочной пенкой.</p><div class="price-row"><span class="price">$3.90</span><a href="cart.html" class="btn small">Добавить</a></div></div></article>
+                <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=700&q=80" alt="Lemonade"></div><div class="card-body"><h3>Lemonade</h3><p class="food-desc">Домашний лимонад с лимоном и мятой.</p><div class="price-row"><span class="price">$3.50</span><a href="cart.html" class="btn small">Добавить</a></div></div></article>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div><div class="logo">Food<span>Go</span></div><p>Еда, которую хочется заказать.</p></div>
+            <div><h3>Компания</h3><a href="about.html">О нас</a><a href="restaurants.html">Рестораны</a><a href="contact.html">Контакты</a></div>
+            <div><h3>Помощь</h3><a href="#">FAQ</a><a href="orders.html">Заказы</a><a href="#">Доставка</a></div>
+            <div><h3>FoodGo</h3><a href="favorites.html">Избранное</a><a href="cart.html">Корзина</a><a href="profile.html">Профиль</a></div>
+        </div>
+        <div class="footer-bottom">© 2026 FoodGo. Все права защищены.</div>
+    </div>
+</footer>
+
+</body>
+</html>
+```

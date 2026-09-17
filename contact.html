@@ -1,0 +1,238 @@
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodGo — Контакты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container nav">
+
+        <a href="index.html" class="logo">Food<span>Go</span></a>
+
+        <nav class="navlinks">
+            <a href="index.html">Главная</a>
+            <a href="restaurants.html">Рестораны</a>
+            <a href="menu.html">Меню</a>
+            <a href="about.html">О нас</a>
+            <a href="contact.html">Контакты</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="favorites.html" class="icon-btn">❤️</a>
+            <a href="cart.html" class="icon-btn">🛒</a>
+            <a href="profile.html" class="icon-btn">👤</a>
+        </div>
+
+    </div>
+</header>
+
+<section class="banner">
+    <div class="container">
+        <div class="breadcrumb">Главная / Контакты</div>
+        <h1>📞 Контакты</h1>
+        <p>Мы всегда готовы помочь</p>
+    </div>
+</section>
+
+<main class="page">
+
+    <div class="container contact-grid">
+
+        <section class="contact-card">
+
+            <h2>Свяжитесь с нами</h2>
+
+            <div class="contact-item">
+                <strong>📞 Телефон</strong>
+                <span>+998 71 200 00 00</span>
+            </div>
+
+            <div class="contact-item">
+                <strong>📧 Email</strong>
+                <span>support@foodgo.example</span>
+            </div>
+
+            <div class="contact-item">
+                <strong>📍 Адрес</strong>
+                <span>Ташкент, Узбекистан</span>
+            </div>
+
+            <div class="contact-item">
+                <strong>🕐 Время работы</strong>
+                <span>Каждый день, 24/7</span>
+            </div>
+
+            <div class="contact-item">
+                <strong>💬 Социальные сети</strong>
+                <span>Instagram • Telegram • YouTube</span>
+            </div>
+
+        </section>
+
+        <section class="form-card">
+
+            <h2>Напишите нам</h2>
+
+            <p class="meta">
+                Заполните форму, и наша команда свяжется с вами.
+            </p>
+
+            <br>
+
+            <form>
+
+                <div class="form-grid">
+
+                    <div class="field">
+                        <label>Имя</label>
+                        <input class="input" type="text" placeholder="Ваше имя" required>
+                    </div>
+
+                    <div class="field">
+                        <label>Email</label>
+                        <input class="input" type="email" placeholder="example@mail.com" required>
+                    </div>
+
+                    <div class="field full">
+                        <label>Тема</label>
+                        <select class="select">
+                            <option>Общий вопрос</option>
+                            <option>Проблема с заказом</option>
+                            <option>Оплата</option>
+                            <option>Доставка</option>
+                            <option>Ресторан</option>
+                            <option>Партнёрство</option>
+                        </select>
+                    </div>
+
+                    <div class="field full">
+                        <label>Сообщение</label>
+                        <textarea class="textarea" rows="8" placeholder="Напишите ваше сообщение..." required></textarea>
+                    </div>
+
+                </div>
+
+                <br>
+
+                <label>
+                    <input type="checkbox">
+                    Я согласен на обработку данных
+                </label>
+
+                <br><br>
+
+                <button class="btn" type="submit">
+                    Отправить сообщение
+                </button>
+
+            </form>
+
+        </section>
+
+    </div>
+
+    <section class="section">
+        <div class="container">
+
+            <div class="section-head">
+                <div>
+                    <h2>❓ Частые вопросы</h2>
+                </div>
+            </div>
+
+            <div class="faq">
+
+                <details>
+                    <summary>Как заказать еду?</summary>
+                    <p>Перейдите в раздел ресторанов, выберите ресторан и добавьте блюда в корзину.</p>
+                </details>
+
+                <details>
+                    <summary>Сколько стоит доставка?</summary>
+                    <p>Цена доставки отображается на странице ресторана и в корзине.</p>
+                </details>
+
+                <details>
+                    <summary>Как оплатить заказ?</summary>
+                    <p>Вы можете выбрать карту, наличные или онлайн-оплату.</p>
+                </details>
+
+                <details>
+                    <summary>Можно ли отменить заказ?</summary>
+                    <p>Это зависит от текущего статуса заказа.</p>
+                </details>
+
+                <details>
+                    <summary>Как работает доставка?</summary>
+                    <p>После оформления заказа ресторан начинает его готовить, после чего курьер доставляет его по указанному адресу.</p>
+                </details>
+
+                <details>
+                    <summary>Как получить скидку?</summary>
+                    <p>Следите за разделом акций и используйте доступные промокоды.</p>
+                </details>
+
+                <details>
+                    <summary>Можно ли заказать заранее?</summary>
+                    <p>Возможность предварительного заказа зависит от выбранного ресторана.</p>
+                </details>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+                <div class="logo">Food<span>Go</span></div>
+                <p>Доставка еды из лучших ресторанов.</p>
+            </div>
+
+            <div>
+                <h3>Компания</h3>
+                <a href="about.html">О компании</a>
+                <a href="restaurants.html">Рестораны</a>
+                <a href="#">Вакансии</a>
+                <a href="contact.html">Контакты</a>
+            </div>
+
+            <div>
+                <h3>Помощь</h3>
+                <a href="#">FAQ</a>
+                <a href="#">Поддержка</a>
+                <a href="#">Доставка</a>
+                <a href="#">Оплата</a>
+            </div>
+
+            <div>
+                <h3>Социальные сети</h3>
+                <a href="#">Instagram</a>
+                <a href="#">Telegram</a>
+                <a href="#">YouTube</a>
+                <a href="#">Facebook</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 FoodGo. Все права защищены.</span>
+            <span>Условия • Конфиденциальность</span>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
+```

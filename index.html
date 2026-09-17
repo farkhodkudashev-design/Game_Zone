@@ -1,0 +1,510 @@
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodGo — Заказ еды</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+    <div class="container">
+        <span>🚴 Доставка от 25 минут</span>
+        <span>🔥 Скидка 30% на первый заказ</span>
+    </div>
+</div>
+
+<header class="navbar">
+    <div class="container nav">
+        <a href="index.html" class="logo">Food<span>Go</span></a>
+
+        <nav class="navlinks">
+            <a href="index.html">Главная</a>
+            <a href="restaurants.html">Рестораны</a>
+            <a href="menu.html">Меню</a>
+            <a href="#offers">Акции</a>
+            <a href="about.html">О нас</a>
+            <a href="contact.html">Контакты</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="restaurants.html" class="icon-btn">🔍</a>
+            <a href="favorites.html" class="icon-btn">❤️</a>
+            <a href="cart.html" class="icon-btn">🛒</a>
+            <a href="profile.html" class="icon-btn">👤</a>
+            <a href="login.html" class="btn small">Войти</a>
+        </div>
+    </div>
+</header>
+
+<main>
+
+<section class="hero reveal">
+    <div class="container hero-grid">
+        <div>
+            <span class="eyebrow">🍔 FoodGo — еда рядом с вами</span>
+
+            <h1>Вкусная еда прямо к вашей двери</h1>
+
+            <p>
+                Заказывайте любимые блюда из лучших ресторанов вашего города
+                быстро, удобно и без лишних хлопот.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="restaurants.html" class="btn">🍕 Заказать еду</a>
+                <a href="restaurants.html" class="btn light">Посмотреть рестораны</a>
+            </div>
+
+            <div class="searchbox">
+                <input type="text" placeholder="Найти блюдо, ресторан или кухню...">
+                <a href="restaurants.html" class="btn">Найти</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85" alt="Вкусная еда">
+
+            <div class="float-card f1">⭐ 4.9 рейтинг</div>
+            <div class="float-card f2">🚴 Доставка от 25 мин</div>
+            <div class="float-card f3">🔥 500+ блюд</div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-head">
+            <div>
+                <h2>Что хотите заказать?</h2>
+                <p>Выберите любимую категорию</p>
+            </div>
+        </div>
+
+        <div class="chips">
+            <a class="chip" href="restaurants.html">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=300&q=80" alt="Пицца">
+                🍕<br>Пицца
+            </a>
+
+            <a class="chip" href="restaurants.html">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=300&q=80" alt="Бургеры">
+                🍔<br>Бургеры
+            </a>
+
+            <a class="chip" href="restaurants.html">
+                <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=300&q=80" alt="Суши">
+                🍣<br>Суши
+            </a>
+
+            <a class="chip" href="restaurants.html">
+                <img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=300&q=80" alt="Курица">
+                🍗<br>Курочка
+            </a>
+
+            <a class="chip" href="restaurants.html">
+                <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=300&q=80" alt="Паста">
+                🍝<br>Паста
+            </a>
+
+            <a class="chip" href="restaurants.html">
+                <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=300&q=80" alt="Тако">
+                🌮<br>Тако
+            </a>
+
+            <a class="chip" href="restaurants.html">
+                <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?auto=format&fit=crop&w=300&q=80" alt="Салат">
+                🥗<br>Салаты
+            </a>
+
+            <a class="chip" href="restaurants.html">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=300&q=80" alt="Десерт">
+                🍰<br>Десерты
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-head">
+            <div>
+                <h2>Популярные рестораны</h2>
+                <p>Лучшие места, которые выбирают наши клиенты</p>
+            </div>
+            <a href="restaurants.html" class="link">Все рестораны →</a>
+        </div>
+
+        <div class="grid restaurant-grid">
+
+            <article class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=800&q=80" alt="Burger House">
+                    <span class="badge">-20%</span>
+                    <a class="heart" href="favorites.html">♡</a>
+                </div>
+                <div class="card-body">
+                    <h3>Burger House</h3>
+                    <p class="meta">🍔 Бургеры • ⭐ <span class="rating">4.9</span></p>
+                    <p class="meta">1.2K отзывов • 🚴 20–30 мин • $2 доставка</p>
+                    <div class="price-row">
+                        <a href="menu.html" class="btn small">Открыть меню</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=80" alt="Pizza Time">
+                    <span class="badge">-15%</span>
+                    <a class="heart" href="favorites.html">♡</a>
+                </div>
+                <div class="card-body">
+                    <h3>Pizza Time</h3>
+                    <p class="meta">🍕 Итальянская кухня • ⭐ <span class="rating">4.8</span></p>
+                    <p class="meta">980 отзывов • 🚴 25–35 мин • $2 доставка</p>
+                    <div class="price-row">
+                        <a href="menu.html" class="btn small">Открыть меню</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=800&q=80" alt="Sushi World">
+                    <span class="badge">FREE</span>
+                    <a class="heart" href="favorites.html">♡</a>
+                </div>
+                <div class="card-body">
+                    <h3>Sushi World</h3>
+                    <p class="meta">🍣 Японская кухня • ⭐ <span class="rating">4.9</span></p>
+                    <p class="meta">2.4K отзывов • 🚴 30–40 мин • Бесплатно</p>
+                    <div class="price-row">
+                        <a href="menu.html" class="btn small">Открыть меню</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=800&q=80" alt="Chicken Point">
+                    <span class="badge">-25%</span>
+                    <a class="heart" href="favorites.html">♡</a>
+                </div>
+                <div class="card-body">
+                    <h3>Chicken Point</h3>
+                    <p class="meta">🍗 Фастфуд • ⭐ <span class="rating">4.7</span></p>
+                    <p class="meta">740 отзывов • 🚴 20–25 мин • $1 доставка</p>
+                    <div class="price-row">
+                        <a href="menu.html" class="btn small">Открыть меню</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=80" alt="Italiano">
+                    <a class="heart" href="favorites.html">♡</a>
+                </div>
+                <div class="card-body">
+                    <h3>Italiano</h3>
+                    <p class="meta">🍝 Итальянская кухня • ⭐ <span class="rating">4.8</span></p>
+                    <p class="meta">620 отзывов • 🚴 30–40 мин • $2 доставка</p>
+                    <div class="price-row">
+                        <a href="menu.html" class="btn small">Открыть меню</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80" alt="Street Food">
+                    <span class="badge">-10%</span>
+                    <a class="heart" href="favorites.html">♡</a>
+                </div>
+                <div class="card-body">
+                    <h3>Street Food</h3>
+                    <p class="meta">🌯 Стритфуд • ⭐ <span class="rating">4.6</span></p>
+                    <p class="meta">410 отзывов • 🚴 15–25 мин • $1 доставка</p>
+                    <div class="price-row">
+                        <a href="menu.html" class="btn small">Открыть меню</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section class="section" id="offers">
+    <div class="container">
+        <div class="section-head">
+            <div>
+                <h2>🔥 Горячие предложения</h2>
+                <p>Успейте воспользоваться выгодными акциями</p>
+            </div>
+        </div>
+
+        <div class="promo-grid">
+            <div class="promo" style="background-image:url('https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=1000&q=80')">
+                <div class="promo-content">
+                    <h3>-30% на первую доставку</h3>
+                    <p>Введите промокод FOODGO30</p>
+                    <br>
+                    <a href="restaurants.html" class="btn small">Заказать</a>
+                </div>
+            </div>
+
+            <div class="promo" style="background-image:url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80')">
+                <div class="promo-content">
+                    <h3>2 пиццы по цене 1</h3>
+                    <p>Только сегодня</p>
+                </div>
+            </div>
+
+            <div class="promo" style="background-image:url('https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80')">
+                <div class="promo-content">
+                    <h3>Бесплатная доставка</h3>
+                    <p>На заказы от $30</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-head">
+            <div>
+                <h2>Что сейчас заказывают</h2>
+                <p>Самые популярные блюда этой недели</p>
+            </div>
+            <a href="menu.html" class="link">Смотреть всё →</a>
+        </div>
+
+        <div class="grid">
+
+            <article class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Cheese Burger">
+                    <span class="badge">-15%</span>
+                    <a href="favorites.html" class="heart">♡</a>
+                </div>
+                <div class="card-body">
+                    <h3>Cheese Burger</h3>
+                    <p class="food-desc">Сочная говядина, сыр, салат, помидор и фирменный соус.</p>
+                    <p class="meta">Burger House • ⭐ 4.9</p>
+                    <div class="price-row">
+                        <span class="price">$9.90</span>
+                        <span class="old">$11.50</span>
+                        <a href="cart.html" class="btn small">+ В корзину</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=700&q=80" alt="Pepperoni Pizza">
+                    <span class="badge">HOT</span>
+                    <a href="favorites.html" class="heart">♡</a>
+                </div>
+                <div class="card-body">
+                    <h3>Pepperoni Pizza</h3>
+                    <p class="food-desc">Томатный соус, моцарелла и ароматная пепперони.</p>
+                    <p class="meta">Pizza Time • ⭐ 4.8</p>
+                    <div class="price-row">
+                        <span class="price">$13.90</span>
+                        <a href="cart.html" class="btn small">+ В корзину</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=700&q=80" alt="California Roll">
+                    <a href="favorites.html" class="heart">♡</a>
+                </div>
+                <div class="card-body">
+                    <h3>California Roll</h3>
+                    <p class="food-desc">Рис, нори, краб, авокадо и свежий огурец.</p>
+                    <p class="meta">Sushi World • ⭐ 4.9</p>
+                    <div class="price-row">
+                        <span class="price">$12.50</span>
+                        <a href="cart.html" class="btn small">+ В корзину</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=700&q=80" alt="Chicken Wings">
+                    <span class="badge">-20%</span>
+                    <a href="favorites.html" class="heart">♡</a>
+                </div>
+                <div class="card-body">
+                    <h3>Chicken Wings</h3>
+                    <p class="food-desc">Хрустящие куриные крылышки с острым соусом.</p>
+                    <p class="meta">Chicken Point • ⭐ 4.7</p>
+                    <div class="price-row">
+                        <span class="price">$8.50</span>
+                        <a href="cart.html" class="btn small">+ В корзину</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-head">
+            <div>
+                <h2>⭐ Почему FoodGo?</h2>
+                <p>Мы делаем заказ еды простым</p>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <strong>500+</strong>
+                <span>ресторанов</span>
+            </div>
+            <div class="stat">
+                <strong>10K+</strong>
+                <span>блюд</span>
+            </div>
+            <div class="stat">
+                <strong>100K+</strong>
+                <span>заказов</span>
+            </div>
+            <div class="stat">
+                <strong>4.9</strong>
+                <span>средний рейтинг</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-head">
+            <div>
+                <h2>💬 Отзывы клиентов</h2>
+                <p>Что говорят наши пользователи</p>
+            </div>
+        </div>
+
+        <div class="review-grid">
+
+            <article class="review">
+                <img class="avatar" src="https://i.pravatar.cc/100?img=12" alt="Алина">
+                <strong>Алина</strong>
+                <div class="rating">★★★★★</div>
+                <p>Очень удобный сервис! Еда приехала горячей и даже раньше указанного времени.</p>
+            </article>
+
+            <article class="review">
+                <img class="avatar" src="https://i.pravatar.cc/100?img=13" alt="Максим">
+                <strong>Максим</strong>
+                <div class="rating">★★★★★</div>
+                <p>Большой выбор ресторанов. Особенно нравится раздел с акциями.</p>
+            </article>
+
+            <article class="review">
+                <img class="avatar" src="https://i.pravatar.cc/100?img=14" alt="Даша">
+                <strong>Даша</strong>
+                <div class="rating">★★★★★</div>
+                <p>Заказываю суши через FoodGo почти каждую неделю. Всё отлично.</p>
+            </article>
+
+            <article class="review">
+                <img class="avatar" src="https://i.pravatar.cc/100?img=15" alt="Илья">
+                <strong>Илья</strong>
+                <div class="rating">★★★★☆</div>
+                <p>Понравился дизайн сайта и быстрое оформление заказа.</p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-head">
+            <div>
+                <h2>❓ Частые вопросы</h2>
+            </div>
+        </div>
+
+        <div class="faq">
+            <details>
+                <summary>Как заказать еду?</summary>
+                <p>Выберите ресторан, добавьте блюда в корзину и перейдите к оформлению заказа.</p>
+            </details>
+
+            <details>
+                <summary>Сколько стоит доставка?</summary>
+                <p>Стоимость зависит от ресторана и расстояния. Многие рестораны предлагают бесплатную доставку.</p>
+            </details>
+
+            <details>
+                <summary>Как оплатить заказ?</summary>
+                <p>Доступна оплата картой, наличными и онлайн-оплата.</p>
+            </details>
+
+            <details>
+                <summary>Можно ли отменить заказ?</summary>
+                <p>Отмена зависит от статуса заказа и правил ресторана.</p>
+            </details>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="logo">Food<span>Go</span></div>
+                <p>Доставка любимой еды из лучших ресторанов.</p>
+            </div>
+
+            <div>
+                <h3>Компания</h3>
+                <a href="about.html">О компании</a>
+                <a href="restaurants.html">Рестораны</a>
+                <a href="contact.html">Контакты</a>
+                <a href="#">Вакансии</a>
+            </div>
+
+            <div>
+                <h3>Помощь</h3>
+                <a href="#">FAQ</a>
+                <a href="contact.html">Поддержка</a>
+                <a href="checkout.html">Оплата</a>
+                <a href="#">Доставка</a>
+            </div>
+
+            <div>
+                <h3>Для бизнеса</h3>
+                <a href="#">Стать партнёром</a>
+                <a href="#">Для ресторанов</a>
+                <a href="#">Для бизнеса</a>
+                <a href="#">Условия</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 FoodGo. Все права защищены.</span>
+            <span>Instagram • Telegram • YouTube • Facebook</span>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
+```

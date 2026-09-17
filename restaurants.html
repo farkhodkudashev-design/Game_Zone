@@ -1,0 +1,130 @@
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodGo — Рестораны</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container nav">
+        <a href="index.html" class="logo">Food<span>Go</span></a>
+
+        <nav class="navlinks">
+            <a href="index.html">Главная</a>
+            <a href="restaurants.html">Рестораны</a>
+            <a href="menu.html">Меню</a>
+            <a href="about.html">О нас</a>
+            <a href="contact.html">Контакты</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="favorites.html" class="icon-btn">❤️</a>
+            <a href="cart.html" class="icon-btn">🛒</a>
+            <a href="profile.html" class="icon-btn">👤</a>
+            <a href="login.html" class="btn small">Войти</a>
+        </div>
+    </div>
+</header>
+
+<section class="banner">
+    <div class="container">
+        <div class="breadcrumb">Главная / Рестораны</div>
+        <h1>Рестораны</h1>
+        <p>Выберите ресторан и закажите любимую еду</p>
+    </div>
+</section>
+
+<main class="page">
+    <div class="container">
+
+        <div class="searchbox">
+            <input type="text" placeholder="🔍 Найти ресторан...">
+            <button class="btn">Найти</button>
+        </div>
+
+        <br>
+
+        <div class="toolbar">
+            <a href="#" class="filter">Все</a>
+            <a href="#" class="filter">🍕 Пицца</a>
+            <a href="#" class="filter">🍔 Бургеры</a>
+            <a href="#" class="filter">🍣 Суши</a>
+            <a href="#" class="filter">🥢 Азия</a>
+            <a href="#" class="filter">🍝 Италия</a>
+            <a href="#" class="filter">🍗 Фастфуд</a>
+            <a href="#" class="filter">🍰 Десерты</a>
+            <a href="#" class="filter">☕ Кофе</a>
+        </div>
+
+        <div class="toolbar">
+            <select class="select" style="max-width:250px;">
+                <option>Сортировка: популярность</option>
+                <option>По рейтингу</option>
+                <option>По времени доставки</option>
+                <option>По цене</option>
+            </select>
+        </div>
+
+        <div class="grid restaurant-grid">
+
+            <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=800&q=80" alt="Burger House"><span class="badge">-20%</span><a class="heart" href="favorites.html">♡</a></div><div class="card-body"><h3>Burger House</h3><p class="meta">🍔 Бургеры • ⭐ <span class="rating">4.9</span></p><p class="meta">20–30 мин • $2 доставка</p><a href="menu.html" class="btn small">Открыть меню</a></div></article>
+
+            <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=80" alt="Pizza Time"><span class="badge">-15%</span><a class="heart" href="favorites.html">♡</a></div><div class="card-body"><h3>Pizza Time</h3><p class="meta">🍕 Пицца • ⭐ <span class="rating">4.8</span></p><p class="meta">25–35 мин • $2 доставка</p><a href="menu.html" class="btn small">Открыть меню</a></div></article>
+
+            <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=800&q=80" alt="Sushi World"><span class="badge">FREE</span><a class="heart" href="favorites.html">♡</a></div><div class="card-body"><h3>Sushi World</h3><p class="meta">🍣 Суши • ⭐ <span class="rating">4.9</span></p><p class="meta">30–40 мин • Бесплатно</p><a href="menu.html" class="btn small">Открыть меню</a></div></article>
+
+            <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=800&q=80" alt="Chicken Point"><span class="badge">-25%</span><a class="heart" href="favorites.html">♡</a></div><div class="card-body"><h3>Chicken Point</h3><p class="meta">🍗 Курочка • ⭐ <span class="rating">4.7</span></p><p class="meta">20–25 мин • $1 доставка</p><a href="menu.html" class="btn small">Открыть меню</a></div></article>
+
+            <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=80" alt="Italiano"><a class="heart" href="favorites.html">♡</a></div><div class="card-body"><h3>Italiano</h3><p class="meta">🍝 Италия • ⭐ <span class="rating">4.8</span></p><p class="meta">30–40 мин • $2 доставка</p><a href="menu.html" class="btn small">Открыть меню</a></div></article>
+
+            <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80" alt="Street Food"><span class="badge">-10%</span><a class="heart" href="favorites.html">♡</a></div><div class="card-body"><h3>Street Food</h3><p class="meta">🌯 Стритфуд • ⭐ <span class="rating">4.6</span></p><p class="meta">15–25 мин • $1 доставка</p><a href="menu.html" class="btn small">Открыть меню</a></div></article>
+
+            <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80" alt="Asian Kitchen"><span class="badge">HOT</span><a class="heart" href="favorites.html">♡</a></div><div class="card-body"><h3>Asian Kitchen</h3><p class="meta">🥢 Азия • ⭐ <span class="rating">4.8</span></p><p class="meta">25–35 мин • $2 доставка</p><a href="menu.html" class="btn small">Открыть меню</a></div></article>
+
+            <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1521305916504-4a1121188589?auto=format&fit=crop&w=800&q=80" alt="Doner City"><a class="heart" href="favorites.html">♡</a></div><div class="card-body"><h3>Doner City</h3><p class="meta">🥙 Донер • ⭐ <span class="rating">4.7</span></p><p class="meta">15–25 мин • $1 доставка</p><a href="menu.html" class="btn small">Открыть меню</a></div></article>
+
+            <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=800&q=80" alt="Taco House"><span class="badge">-15%</span><a class="heart" href="favorites.html">♡</a></div><div class="card-body"><h3>Taco House</h3><p class="meta">🌮 Мексиканская • ⭐ <span class="rating">4.6</span></p><p class="meta">20–30 мин • $2 доставка</p><a href="menu.html" class="btn small">Открыть меню</a></div></article>
+
+            <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Sweet Cake"><a class="heart" href="favorites.html">♡</a></div><div class="card-body"><h3>Sweet Cake</h3><p class="meta">🍰 Десерты • ⭐ <span class="rating">4.9</span></p><p class="meta">20–35 мин • $2 доставка</p><a href="menu.html" class="btn small">Открыть меню</a></div></article>
+
+            <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Coffee Lab"><a class="heart" href="favorites.html">♡</a></div><div class="card-body"><h3>Coffee Lab</h3><p class="meta">☕ Кофе • ⭐ <span class="rating">4.9</span></p><p class="meta">15–25 мин • $1 доставка</p><a href="menu.html" class="btn small">Открыть меню</a></div></article>
+
+            <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80" alt="Family Restaurant"><a class="heart" href="favorites.html">♡</a></div><div class="card-body"><h3>Family Restaurant</h3><p class="meta">🍽️ Европейская • ⭐ <span class="rating">4.7</span></p><p class="meta">30–45 мин • $3 доставка</p><a href="menu.html" class="btn small">Открыть меню</a></div></article>
+
+            <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80" alt="Urban Burger"><a class="heart" href="favorites.html">♡</a></div><div class="card-body"><h3>Urban Burger</h3><p class="meta">🍔 Бургеры • ⭐ <span class="rating">4.8</span></p><p class="meta">20–30 мин • $2 доставка</p><a href="menu.html" class="btn small">Открыть меню</a></div></article>
+
+            <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1593560708920-61dd98c8c6d6?auto=format&fit=crop&w=800&q=80" alt="Pizza Napoli"><a class="heart" href="favorites.html">♡</a></div><div class="card-body"><h3>Pizza Napoli</h3><p class="meta">🍕 Пицца • ⭐ <span class="rating">4.9</span></p><p class="meta">25–35 мин • $2 доставка</p><a href="menu.html" class="btn small">Открыть меню</a></div></article>
+
+            <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80" alt="Tokyo Roll"><a class="heart" href="favorites.html">♡</a></div><div class="card-body"><h3>Tokyo Roll</h3><p class="meta">🍣 Япония • ⭐ <span class="rating">4.8</span></p><p class="meta">30–40 мин • $2 доставка</p><a href="menu.html" class="btn small">Открыть меню</a></div></article>
+
+            <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=800&q=80" alt="Crispy Chicken"><span class="badge">-20%</span><a class="heart" href="favorites.html">♡</a></div><div class="card-body"><h3>Crispy Chicken</h3><p class="meta">🍗 Фастфуд • ⭐ <span class="rating">4.7</span></p><p class="meta">20–30 мин • $1 доставка</p><a href="menu.html" class="btn small">Открыть меню</a></div></article>
+
+            <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80" alt="Pasta House"><a class="heart" href="favorites.html">♡</a></div><div class="card-body"><h3>Pasta House</h3><p class="meta">🍝 Паста • ⭐ <span class="rating">4.6</span></p><p class="meta">25–40 мин • $2 доставка</p><a href="menu.html" class="btn small">Открыть меню</a></div></article>
+
+            <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80" alt="Green Bowl"><a class="heart" href="favorites.html">♡</a></div><div class="card-body"><h3>Green Bowl</h3><p class="meta">🥗 Здоровая еда • ⭐ <span class="rating">4.8</span></p><p class="meta">20–30 мин • $2 доставка</p><a href="menu.html" class="btn small">Открыть меню</a></div></article>
+
+            <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&q=80" alt="Donut Factory"><a class="heart" href="favorites.html">♡</a></div><div class="card-body"><h3>Donut Factory</h3><p class="meta">🍩 Десерты • ⭐ <span class="rating">4.9</span></p><p class="meta">15–25 мин • $1 доставка</p><a href="menu.html" class="btn small">Открыть меню</a></div></article>
+
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div><div class="logo">Food<span>Go</span></div><p>Любимая еда всегда рядом.</p></div>
+            <div><h3>Компания</h3><a href="about.html">О нас</a><a href="restaurants.html">Рестораны</a><a href="contact.html">Контакты</a></div>
+            <div><h3>Помощь</h3><a href="#">FAQ</a><a href="contact.html">Поддержка</a><a href="#">Доставка</a></div>
+            <div><h3>Социальные сети</h3><a href="#">Instagram</a><a href="#">Telegram</a><a href="#">YouTube</a></div>
+        </div>
+        <div class="footer-bottom">© 2026 FoodGo. Все права защищены.</div>
+    </div>
+</footer>
+
+</body>
+</html>
+```

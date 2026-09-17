@@ -1,0 +1,198 @@
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodGo — Оформление заказа</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container nav">
+        <a href="index.html" class="logo">Food<span>Go</span></a>
+
+        <nav class="navlinks">
+            <a href="index.html">Главная</a>
+            <a href="restaurants.html">Рестораны</a>
+            <a href="menu.html">Меню</a>
+            <a href="about.html">О нас</a>
+            <a href="contact.html">Контакты</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="cart.html" class="icon-btn">🛒</a>
+            <a href="profile.html" class="icon-btn">👤</a>
+        </div>
+    </div>
+</header>
+
+<section class="banner">
+    <div class="container">
+        <div class="breadcrumb">Главная / Корзина / Оформление</div>
+        <h1>💳 Оформление заказа</h1>
+        <p>Заполните данные для доставки</p>
+    </div>
+</section>
+
+<main class="page">
+    <div class="container split">
+
+        <form class="form-card">
+
+            <h2>Контактные данные</h2>
+            <br>
+
+            <div class="form-grid">
+
+                <div class="field">
+                    <label>Имя</label>
+                    <input class="input" type="text" placeholder="Ваше имя">
+                </div>
+
+                <div class="field">
+                    <label>Телефон</label>
+                    <input class="input" type="tel" placeholder="+998 90 000 00 00">
+                </div>
+
+                <div class="field full">
+                    <label>Email</label>
+                    <input class="input" type="email" placeholder="example@mail.com">
+                </div>
+
+                <div class="field">
+                    <label>Город</label>
+                    <input class="input" type="text" placeholder="Ваш город">
+                </div>
+
+                <div class="field">
+                    <label>Улица</label>
+                    <input class="input" type="text" placeholder="Название улицы">
+                </div>
+
+                <div class="field">
+                    <label>Дом</label>
+                    <input class="input" type="text" placeholder="Дом">
+                </div>
+
+                <div class="field">
+                    <label>Квартира</label>
+                    <input class="input" type="text" placeholder="Квартира">
+                </div>
+
+                <div class="field full">
+                    <label>Комментарий курьеру</label>
+                    <textarea class="textarea" rows="5" placeholder="Например: позвонить перед доставкой"></textarea>
+                </div>
+
+            </div>
+
+            <br>
+
+            <h2>Способ доставки</h2>
+            <br>
+
+            <div class="radio-row">
+                <label class="radio">
+                    <input type="radio" name="delivery" checked>
+                    🚴 Курьер
+                </label>
+
+                <label class="radio">
+                    <input type="radio" name="delivery">
+                    🏪 Самовывоз
+                </label>
+            </div>
+
+            <br>
+
+            <h2>Способ оплаты</h2>
+            <br>
+
+            <div class="radio-row">
+                <label class="radio">
+                    <input type="radio" name="payment" checked>
+                    💳 Банковская карта
+                </label>
+
+                <label class="radio">
+                    <input type="radio" name="payment">
+                    💵 Наличные
+                </label>
+
+                <label class="radio">
+                    <input type="radio" name="payment">
+                    📱 Онлайн-оплата
+                </label>
+            </div>
+
+            <br>
+
+            <label>
+                <input type="checkbox">
+                Сохранить адрес для следующих заказов
+            </label>
+
+            <br>
+
+            <button class="btn" type="submit">Оформить заказ</button>
+
+        </form>
+
+        <aside class="summary">
+            <h2>Итог заказа</h2>
+
+            <div class="sumline">
+                <span>Pepperoni Pizza ×2</span>
+                <strong>$27.80</strong>
+            </div>
+
+            <div class="sumline">
+                <span>Cheese Burger ×1</span>
+                <strong>$9.90</strong>
+            </div>
+
+            <div class="sumline">
+                <span>Cola ×2</span>
+                <strong>$5.00</strong>
+            </div>
+
+            <div class="sumline">
+                <span>Доставка</span>
+                <strong>$3.00</strong>
+            </div>
+
+            <div class="sumline">
+                <span>Скидка</span>
+                <strong style="color:#20a464;">-$5.00</strong>
+            </div>
+
+            <div class="total">
+                <div class="sumline">
+                    <span>Итого</span>
+                    <strong>$40.70</strong>
+                </div>
+            </div>
+
+            <p class="meta">🚴 Примерное время доставки: 25–40 минут</p>
+        </aside>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div><div class="logo">Food<span>Go</span></div><p>Быстрая доставка любимой еды.</p></div>
+            <div><h3>Компания</h3><a href="about.html">О нас</a><a href="restaurants.html">Рестораны</a><a href="contact.html">Контакты</a></div>
+            <div><h3>Помощь</h3><a href="#">FAQ</a><a href="#">Оплата</a><a href="#">Доставка</a></div>
+            <div><h3>Сервисы</h3><a href="orders.html">Заказы</a><a href="favorites.html">Избранное</a><a href="profile.html">Профиль</a></div>
+        </div>
+        <div class="footer-bottom">© 2026 FoodGo. Все права защищены.</div>
+    </div>
+</footer>
+
+</body>
+</html>
+```
